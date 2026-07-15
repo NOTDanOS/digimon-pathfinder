@@ -1,0 +1,224 @@
+{
+  "digimon": [
+    {
+      "name": "Pabumon",
+      "stage": "Training 1",
+      "evolves_from": [],
+      "evolves_to": ["Tanemon", "Yokomon", "Motimon"],
+      "requirements_to_reach": {
+        "level": 1,
+        "ABI": 0,
+        "CAM": 0,
+        "stats": {
+          "ATK": 0,
+          "DEF": 0,
+          "HP": 0,
+          "INT": 0,
+          "SP": 0,
+          "SPD": 0
+        },
+        "additional": "Starting/base Digimon - no requirements found on source page"
+      },
+      "base_stats": {
+        "lv1": { "HP": 320, "SP": 18, "ATK": 23, "INT": 20, "DEF": 23, "SPD": 24 },
+        "lv50": { "HP": 950, "SP": 62, "ATK": 76, "INT": 69, "DEF": 76, "SPD": 68 },
+        "lv99": { "HP": 1590, "SP": 106, "ATK": 130, "INT": 118, "DEF": 130, "SPD": 112 }
+      },
+      "reference_info": {
+        "type": "Free",
+        "attribute": "Neutral",
+        "lore": "At first glance it looks like a sea-green bubble, but it's actually a totally autonomous Digimon. Its unstable surface means practically no defense or prowess in combat. It creates infinite tiny foam clones from the pacifier-like object in its mouth.",
+        "support_skill": "Innocent Eyes - Increases ACU and EVA by 1%.",
+        "signature_move": "Adhesive Bubble Blow"
+      }
+    },
+    {
+      "name": "Yokomon",
+      "stage": "Training 2",
+      "evolves_from": ["Pabumon"],
+      "evolves_to": ["Elecmon", "Biyomon", "Mushroomon", "Wormmon"],
+      "requirements_to_reach": {
+        "level": 3,
+        "ABI": 0,
+        "CAM": 0,
+        "stats": {
+          "ATK": 0,
+          "DEF": 0,
+          "HP": 50,
+          "INT": 0,
+          "SP": 0,
+          "SPD": 0
+        },
+        "additional": null
+      },
+      "base_stats": {
+        "lv1": { "HP": 410, "SP": 20, "ATK": 29, "INT": 26, "DEF": 29, "SPD": 25 },
+        "lv50": { "HP": 1040, "SP": 64, "ATK": 82, "INT": 75, "DEF": 82, "SPD": 69 },
+        "lv99": { "HP": 1680, "SP": 108, "ATK": 136, "INT": 124, "DEF": 136, "SPD": 113 }
+      },
+      "reference_info": {
+        "type": "Free",
+        "attribute": "Plant",
+        "lore": "A lesser bulb Digimon with a huge flower blooming on its head. It can move around by swinging its root-shaped feelers, and can even float through the air for short distances.",
+        "support_skill": "Innocent Eyes - Increases ACU and EVA by 1%.",
+        "signature_move": "Soap Flower"
+      }
+    },
+    {
+      "name": "Elecmon",
+      "stage": "Rookie",
+      "evolves_from": ["Yokomon"],
+      "evolves_to": ["Garurumon", "Garurumon (Blk)", "Geremon", "Sukamon", "Nanimon", "Leomon"],
+      "requirements_to_reach": {
+        "level": 7,
+        "ABI": 0,
+        "CAM": 25,
+        "stats": {
+          "ATK": 0,
+          "DEF": 0,
+          "HP": 75,
+          "INT": 0,
+          "SP": 20,
+          "SPD": 20
+        },
+        "additional": null
+      },
+      "base_stats": {
+        "lv1": null,
+        "lv50": null,
+        "lv99": null
+      },
+      "reference_info": {
+        "type": "Data",
+        "attribute": "Electric",
+        "lore": "A mammal Digimon with an incredibly inquisitive and naughty personality. Elecmon also has nine tails, which it spreads like a peacock in battle and uses to threaten the enemy. Its special move is Thunder Cloud.",
+        "support_skill": null,
+        "signature_move": "Thunder Cloud"
+      }
+    },
+    {
+      "name": "Garurumon",
+      "stage": "Champion",
+      "evolves_from": ["Gabumon", "Elecmon", "Renamon"],
+      "evolves_to": ["Zudomon", "DoruGreymon", "Panjyamon", "WereGarurumon"],
+      "requirements_to_reach": {
+        "level": 15,
+        "ABI": 0,
+        "CAM": 25,
+        "stats": {
+          "ATK": 0,
+          "DEF": 0,
+          "HP": 0,
+          "INT": 0,
+          "SP": 0,
+          "SPD": 50
+        },
+        "additional": null
+      },
+      "base_stats": {
+        "lv1": null,
+        "lv50": null,
+        "lv99": null
+      },
+      "reference_info": {
+        "type": "Vaccine",
+        "attribute": "Fire",
+        "lore": "A lupine beast Digimon covered in blue, white and silver fur. With fur as hard as the rare metal mithril, blades on its shoulders are extremely sharp, dicing anything they touch to pieces. Its battle instinct is fierce like the arctic tundra that forged its muscles. A carnivore's agility and the accuracy to take out its target make it feared by other Digimon. Yet it's also quite intelligent, and obeys its master or leader without fail. Its special move Fox Fire fires a bright blue flame from its mouth.",
+        "support_skill": "Increases SPD by 15%.",
+        "signature_move": "Fox Fire"
+      }
+    },
+    {
+      "name": "WereGarurumon",
+      "stage": "Ultimate",
+      "evolves_from": ["Lobomon", "Ogremon", "GaoGamon", "Garurumon", "Strikedramon"],
+      "evolves_to": ["MirageGaogamon", "MetalGarurumon", "MetalGarurumon (Blk)"],
+      "requirements_to_reach": {
+        "level": 28,
+        "ABI": 0,
+        "CAM": 50,
+        "stats": {
+          "ATK": 90,
+          "DEF": 0,
+          "HP": 0,
+          "INT": 0,
+          "SP": 0,
+          "SPD": 85
+        },
+        "additional": null
+      },
+      "base_stats": {
+        "lv1": { "HP": 850, "SP": 45, "ATK": 115, "INT": 40, "DEF": 45, "SPD": 95 },
+        "lv50": { "HP": 1430, "SP": 89, "ATK": 178, "INT": 79, "DEF": 89, "SPD": 153 },
+        "lv99": { "HP": 2020, "SP": 133, "ATK": 242, "INT": 118, "DEF": 133, "SPD": 212 }
+      },
+      "reference_info": {
+        "type": "Vaccine",
+        "attribute": "Earth",
+        "lore": "A beast humanoid Digimon Digivolution of a Garurumon that can now walk on two legs. By being bipedal, it has lost speed, but it has gained powerful attack and defense capabilities as a command-type Digimon. Inheriting the leg strength of the Garurumon, it has one of the best jumps in the Digimon world. It is also very loyal and will do anything if ordered by its master, making it very reliable. Its special move is Wolf Claw, by which it slices enemies to shreds with its hands.",
+        "support_skill": "Feral Pulse - Increases SPD by 15%.",
+        "signature_move": "Wolf Claw"
+      }
+    },
+    {
+      "name": "MetalGarurumon",
+      "stage": "Mega",
+      "evolves_from": ["WereGarurumon"],
+      "evolves_to": [],
+      "requirements_to_reach": {
+        "level": 55,
+        "ABI": 20,
+        "CAM": 80,
+        "stats": {
+          "ATK": 130,
+          "DEF": 120,
+          "HP": 0,
+          "INT": 0,
+          "SP": 0,
+          "SPD": 150
+        },
+        "additional": null
+      },
+      "base_stats": {
+        "lv1": null,
+        "lv50": null,
+        "lv99": null
+      },
+      "reference_info": {
+        "type": "Data",
+        "attribute": "Water",
+        "lore": null,
+        "support_skill": null,
+        "signature_move": null
+      }
+    }
+  ],
+  "roster_names_placeholder": [
+    "Kuramon", "Pabumon", "Punimon", "Botamon", "Poyomon", "Koromon", "Tanemon", "Tsunomon",
+    "Tsumemon", "Tokomon", "Nyaromon", "Pagumon", "Yokomon", "Bukamon", "Motimon", "Wanyamon",
+    "Agumon", "Agumon (Blk)", "Armadillomon", "Impmon", "Elecmon", "Otamamon", "Gaomon", "Gazimon",
+    "Gabumon", "Gabumon (Blk)", "Guilmon", "Kudamon", "Keramon", "Gotsumon", "Goblimon", "Gomamon",
+    "Syakomon", "Zubamon", "Solarmon", "Chuumon", "Terriermon", "Tentomon", "ToyAgumon", "Dracmon",
+    "Dracomon", "Dorumon", "Hagurumon", "Patamon", "Hackmon", "Palmon", "DemiDevimon", "Biyomon",
+    "Falcomon", "FanBeemon", "Veemon", "Salamon", "Betamon", "Hawkmon", "Mushroomon", "Monodramon",
+    "Lalamon", "Lucemon", "Lunamon", "Renamon", "Lopmon", "Wormmon", "IceDevimon", "Icemon",
+    "Aquilamon", "Agunimon", "Ankylomon", "Ikkakumon", "Wizardmon", "Lobomon", "Woodmon", "Airdramon",
+    "ExVeemon", "Angemon", "Ogremon", "Guardromon", "Guardromon (Gold)", "GaoGamon", "Kabuterimon",
+    "ShellNumemon", "Gargomon", "Garurumon", "Garurumon (Blk)", "Kyubimon", "Growlmon", "Kurisarimon",
+    "Greymon", "Greymon (Blue)", "Clockmon", "Kuwagamon", "Gekomon", "Geremon", "Coredramon (Blue)",
+    "Coredramon (Green)", "GoldNumemon", "Golemon", "Cyclonemon", "Sangloupmon", "Sunflowmon",
+    "Seadramon", "Coelamon", "GeoGreymon", "Sukamon", "Starmon", "Stingmon", "Strikedramon",
+    "Zudomon", "Antylamon", "Andromon", "Meteormon", "Infermon", "Myotismon", "Wingdramon",
+    "BurningGreymon", "AeroVeedramon", "Etemon", "Angewomon", "Okuwamon", "Garudamon", "KendoGarurumon",
+    "Gigadramon", "CatchMamemon", "CannonBeemon", "Groundramon", "GrapLeomon", "Grademon", "Crescemon",
+    "Cyberdramon", "Shakkoumon", "Cherrymon", "Silphymon", "SuperStarmon", "SkullGreymon", "SkullSatamon",
+    "SaviorHuckmon", "Taomon", "Dragomon", "Chirinmon", "Dinobeemon", "Digitamamon", "SkullMeramon",
+    "Duramon", "ShogunGekomon", "Triceramon", "DoruGreymon", "Knightmon", "Datamon", "Paildramon",
+    "Panjyamon", "Pandamon", "Pumpkinmon", "Piximon", "HippoGryphonmon", "Phantomon", "BlackKingNumemon",
+    "BlueMeramon", "Vademon", "Whamon", "MagnaAngemon", "Volcanomon", "Matadormon", "MachGaogamon",
+    "Mamemon", "MegaSeadramon", "Megadramon", "WarGrowlmon", "MetalGreymon", "MetalGreymon (Blue)",
+    "MetalTyrannomon", "MetalMamemon", "Monzaemon", "Crowmon", "RizeGreymon", "Lilamon", "Rapidmon",
+    "Lillymon", "Lucemon FM", "LadyDevimon", "WereGarurumon", "WereGarurumon (Blk)", "Wisemon",
+    "Hisyaryumon", "MegaKabuterimon", "MirageGaogamon", "MetalGarurumon", "MetalGarurumon (Blk)"
+  ]
+}
