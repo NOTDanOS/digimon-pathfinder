@@ -16,34 +16,40 @@ def find_path(graph, start, end):
     # start: name of starting digimon
     # end: name of ending digimon
     queue = deque()
-    queue.append([start])
+    queue.append([{"name": start, "transition": None}])
     visited = set()
 
     while queue:
         path = queue.popleft()
         current = path[-1] # last digimon in the path
 
-        if current == end: # we found the digimon we want
+        if current["name"] == end: # we found the digimon we want
             return path
 
-        if current in visited: #
+        if current["name"] in visited: #
             continue
-        visited.add(current)
+        visited.add(current["name"])
 
-        for neighbor in graph[current]["evolves_to"]:
+        for neighbor in graph[current["name"]]["evolves_to"]:
             if neighbor not in visited and neighbor in graph:  # check if neighbor digimon has an entry in the graph
                 new_path = list(path)
-                new_path.append(neighbor)
+                new_path.append({"name": neighbor, "transition": "digivolve"})  # this loop focuses on DIGIVOLVING UP
                 queue.append(new_path)
         
-        # now: look at current's neighbors (evolves_to)
-        # for each neighbor not yet visited, build a new path and add it to the queue
+        for neighbor in graph[current["name"]]["evolves_from"]:
+            if neighbor not in visited and neighbor in graph:  # check if neighbor digimon has an entry in the graph
+                new_path = list(path)
+                new_path.append({"name": neighbor, "transition": "de-digivolve"})  # this loop focuses on DIGIVOLVING DOWN
+                queue.append(new_path)
         
     return None  # no path found
 
 digimon_graph = build_graph(data["digimon"])
 
+result = find_path(digimon_graph, "Garurumon", "Pabumon")
+print(result) #test for de-digivolution
+
 result = find_path(digimon_graph, "Pabumon", "Garurumon")
-print(result)
+print(result) #test for digivolution
 
 #next step: make basic BFS to grab appropriate digimon AFTER
