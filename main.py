@@ -15,6 +15,11 @@ def find_path(graph, start, end):
     # graph: dictionary of digimon
     # start: name of starting digimon
     # end: name of ending digimon
+
+    # checks if digimon (start or end) is in the graph, if not return None
+    if start not in graph or end not in graph:
+        return None
+    
     queue = deque()
     queue.append([{"name": start, "transition": None}])
     visited = set()
@@ -43,6 +48,15 @@ def find_path(graph, start, end):
                 queue.append(new_path)
         
     return None  # no path found
+
+def check_abi_validity(path, graph, starting_abi, starting_max_level):
+    # checks if digimon has enough validity to reach wanted stage
+    # graph: dictionary of digimon
+    # path: list of dicts, from starting digimon to target digimon, each dict contains name and transition
+    # starting_abi: current abi of the digimon
+    # starting_max_level: current max level of the digimon
+    current_stage = graph[path[0]["name"]]["stage"]
+    pass
 
 digimon_graph = build_graph(data["digimon"])
 

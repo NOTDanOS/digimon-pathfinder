@@ -101,7 +101,7 @@ def calculate_new_max_level (current_max, current_stage, target_stage, level, tr
         return current_max - current_base + target_base + math.floor((level+x)/10) + gendown_constant
     else:
         raise ValueError("Invalid transition type. Must be 'digivolve' or 'de-digivolve'.")
-    
+
 # Test cases
-result = calculate_new_max_level(30, "Rookie", "Champion", 20, "digivolve")
-print(result)
+# result = calculate_new_max_level(30, "Rookie", "Champion", 20, "digivolve") result should be 53
+# print(result)
